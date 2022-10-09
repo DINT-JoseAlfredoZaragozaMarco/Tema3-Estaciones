@@ -8,7 +8,7 @@
         Icon="./assets/icon.png"
         Title="Las 4 estaciones" Height="450" Width="800">
     <Grid>
-        <UniformGrid Rows="3" Columns="2">
+        <UniformGrid Rows="3" Columns="2" FirstColumn="1">
             <TextBlock FontSize="24" FontStyle="Italic" FontWeight="Bold" TextAlignment="Center">
                 <TextBlock.Effect>
                     <DropShadowEffect/>
