@@ -6,33 +6,28 @@
         xmlns:local="clr-namespace:Tema3_Estaciones"
         mc:Ignorable="d"
         Icon="./assets/icon.png"
-        Title="Las 4 estaciones" Height="450" Width="800">
-    <Grid>
-        <UniformGrid Rows="3" Columns="2" FirstColumn="1">
-            <TextBlock FontSize="24" FontStyle="Italic" FontWeight="Bold" TextAlignment="Center">
-                <TextBlock.Effect>
-                    <DropShadowEffect/>
-                </TextBlock.Effect>
-                <TextBlock.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="#FFE8AB04" Offset="0.468"/>
-                        <GradientStop Color="#FF1AFD12" Offset="1"/>
-                    </LinearGradientBrush>
-                </TextBlock.Foreground>
-                Las 4 estaciones
-            </TextBlock>
+        Title="Las 4 estaciones" Height="650" Width="800" MinHeight="650" MinWidth="800">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" FontSize="24" FontStyle="Italic" FontWeight="Bold" TextAlignment="Center" Text="Las 4 estaciones">
+            <TextBlock.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE8AB04" Offset="0.468"/>
+                    <GradientStop Color="#FF1AFD12" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground></TextBlock>
+        <UniformGrid>
             <ScrollViewer HorizontalScrollBarVisibility="Visible" Margin="10">
-                <Image Source="./assets/invierno.jpg" Stretch="None"></Image>    
+                <Image Source="./assets/invierno.jpg" Stretch="None"></Image>
             </ScrollViewer>
             <ScrollViewer HorizontalScrollBarVisibility="Visible" Margin="10">
-                <Image Source="./assets/primavera.jpg" Stretch="None"></Image>    
+                <Image Source="./assets/primavera.jpg" Stretch="None"></Image>
             </ScrollViewer>
             <ScrollViewer HorizontalScrollBarVisibility="Visible" Margin="10">
-                <Image Source="./assets/verano.jpg" Stretch="None"></Image>    
+                <Image Source="./assets/verano.jpg" Stretch="None"></Image>
             </ScrollViewer>
             <ScrollViewer HorizontalScrollBarVisibility="Visible" Margin="10">
                 <Image Source="./assets/otoño.jpg" Stretch="None"></Image>
             </ScrollViewer>
         </UniformGrid>
-    </Grid>
+    </DockPanel>
 </Window>
